@@ -5,7 +5,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      nunito:["Nunito", "sans-serif"],
+      roboto:["roboto", "sans-serif"]
+    },
   },
   plugins: [],
 }

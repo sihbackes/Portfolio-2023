@@ -1,11 +1,11 @@
 export const Home = () => {
 return(
-  <header className="flex justify-center">
-    <div className="w-10/12 h-3/6">
-      <h3 className="text-xl my-8">Hi there,</h3>
-      <h1 className="text-6xl my-8">I'm Simone Backes</h1>
-      <h3 className="text-lg my-8">Lorem Ipsum é simplesmente uma simulação de texto da indústri e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos </h3>
+  <section className="px-10 md:px-44 border-b border-gray-100">
+    <div className=" container mx-auto py-10 md:py-32">
+      <h3 className="font-roboto pb-6">Hi there,</h3>
+      <h1 className="text-6xl font-nunito font-extrabold pb-6">I'm Simone Backes</h1>
+      <h3 className="font-roboto text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
     </div>
-  </header>
+  </section>
 )
 }
