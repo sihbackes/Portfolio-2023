@@ -26,7 +26,7 @@ export const Project = () => {
                <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-70 transition-opacity"></div>
                <video className="rounded-xl" src={element.video} autoPlay loop muted/>
              </div>
-             <div className="absolute bottom-0 left-0 right-0 p-4  transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-20">
+             <div className="absolute bottom-0 left-0 right-0 p-4  transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10">
                <h3 className="text-white font-nunito text-3xl my-2">{element.projectName}</h3>
                 {element.technologies.map((tec)=> (
                  <span className="inline-block text-zinc-900s bg-slate-50 font-roboto text-sm  mx-1 px-3 rounded-full">{tec}</span>  
@@ -72,7 +72,7 @@ export const Project = () => {
                   <div className="mt-6">
                     <h4>Technologies</h4>
                     {element.technologies.map((tec)=> (
-                 <span className="inline-block font-roboto text-sm mr-3 ">{tec}</span>  
+                      <span className="inline-block font-roboto text-sm mr-3 ">{tec}</span>  
                     ))}
                   </div>
 
