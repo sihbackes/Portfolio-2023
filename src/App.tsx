@@ -1,16 +1,19 @@
 import { NavBar } from "./components/NavBar"
 import { Home } from "./components/Home"
 import { About } from "./components/About"
-import { ProjectPage } from "./components/ProjectPage"
+import { Project } from "./components/Project"
+import { Contact } from "./components/Contact"
+
 
 function App() {
 
   return (
-    <div className="px-10 lg:px-80">
+    <div className="px-10 lg:max-w-6xl mx-auto">
       <NavBar/>
       <Home/>
       <About/>
-      <ProjectPage/>
+      <Project/>
+      <Contact/>
     </div>
   )
 }

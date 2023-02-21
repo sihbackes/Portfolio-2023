@@ -3,7 +3,7 @@ import {FiMenu} from 'react-icons/fi'
 export const NavBar = () => {
 return(
 <header>
-    <div className="flex w-full px-3 md:px-20 py-5 border-b border-gray-100">
+    <div className="flex w-full px-3 md:px-20 py-5 border-b border-gray-100 font-roboto">
      <div className="container flex items-center mx-auto">
       <div className="flex justify-end flex-1 md:hidden text-2xl">
        <FiMenu/>
@@ -15,10 +15,10 @@ return(
               <a href="#">About me</a>
               </li>
             <li className="px-5">
-              <a href="#" >Experience</a>
+              <a href="#" >Projects</a>
             </li>
             <li className="px-5">
-              <a href="#" >Projects</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
         </nav>
