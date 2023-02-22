@@ -1,11 +1,25 @@
+import { NavBar } from "./NavBar"
+import { Banner } from "./Banner"
+import { About } from "./About"
+import { Project } from "./Project"
+import { Contact } from "./Contact"
+import { FloatingIcons } from "./FloatingIcons"
+import { Footer } from "./Footer"
+
+
 export const Home = () => {
-return(
-  <section className="border-b border-gray-100 dark:border-zinc-600">
-    <div className="mx-auto py-10 md:py-32">
-      <h3 className="font-roboto pb-6">Hi there,</h3>
-      <h1 className="text-6xl font-nunito font-extrabold pb-6">I'm Simone Backes</h1>
-      <h3 className="font-roboto text-lg">I'm a Front-end Developer. Welcome to my portfolio.</h3>
-    </div>
-  </section>
-)
+  return(
+    <div className="dark:bg-zinc-800 dark:text-gray-300">
+   
+    <FloatingIcons/>
+   <div className="px-10 lg:max-w-6xl mx-auto ">
+       <NavBar/>
+       <Banner/>
+       <About/>
+       <Project/>
+       <Contact/>
+       <Footer/>
+   </div>
+  </div>
+  )
 }

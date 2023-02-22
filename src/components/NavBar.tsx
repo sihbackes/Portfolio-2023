@@ -26,25 +26,25 @@ export const NavBar = () => {
 
 return(
 <header>
-    <div className="flex w-full  py-5 border-b border-gray-100 font-roboto dark:border-zinc-600">
-     <div className="container flex items-center mx-auto">
+    <div className="flex w-full  py-5 border-b border-gray-100 font-roboto dark:border-zinc-600 z-50">
+     <div className="container flex items-center mx-auto z-10 cursor-pointer">
       <VscColorMode onClick={handleThemeSwitch}/>
       <div className="flex justify-end flex-1 md:hidden text-2xl">
        <FiMenu onClick={toggleMenu}/>
       </div>
       {isOpen && (
-        <div className="absolute top-0 right-0 bg-white w-48 py-2 mt-12 rounded-lg shadow-xl dark:bg-zinc-800 dark:text-gray-200">
-          <HashLink smooth to="/#about" className="block px-4 py-2 text-zinc-800 border-b border-gray-100 hover:text-white hover:bg-zinc-500">
+        <div className="absolute top-0 right-0 bg-white w-48 py-2 mt-12 rounded-lg shadow-xl dark:bg-zinc-800 dark:text-gray-200 z-10">
+          <HashLink smooth to="/#about" className="block px-4 py-2 text-zinc-800 hover:text-white hover:bg-zinc-500  dark:text-gray-300">
             About me
           </HashLink >
-          <HashLink smooth to="/#projects" className="block px-4 py-2 text-zinc-800 border-b border-gray-100 hover:text-white hover:bg-zinc-500">
+          <HashLink smooth to="/#projects" className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300">
             Projects
           </HashLink >
-          <HashLink smooth to="/#contact"className="block px-4 py-2 text-zinc-800 border-b border-gray-100 hover:text-white hover:bg-zinc-500">
+          <HashLink smooth to="/#contact" className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300">
             Contact
           </HashLink>
-          <div className="block px-4 py-2 text-zinc-800 hover:text-white hover:bg-zinc-500">
-            Resume
+          <div className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300">
+            <a href="/public/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
           </div>
         </div>
       )}
@@ -64,7 +64,7 @@ return(
              <span className="border-r border-zinc-800 dark:border-gray-300"></span>
             </li>
             <li className="px-5">
-              <div>Resume</div>
+              <a href="/public/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </nav>
