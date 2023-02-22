@@ -7,11 +7,10 @@ export const About = () => {
         <div className="grid grid-col-1 md:grid-cols-3">
           <div className="grid-cols-1 md:col-span-2 md:mb-0 mb-14">
             <p className="font-roboto text-justify">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-              a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            I am originally from Brazil and currently based in the UK. I have had plenty of work experience, including hospitality and customer service, 
+            but have always had a passion for technology. I decided to learn more and discovered the world of Frontend development. After studying on my 
+            own for some time, I joined the Epicode bootcamp, which gave me the knowledge and confidence I needed. I consider myself responsible, patient, 
+            and easy to learn. I am always looking forward to connecting with people and I love keeping a positive outlook on life and work.
             </p>
           </div>
           <div className="grid-cols-1 mx-auto md:col-span-1 relative">   
