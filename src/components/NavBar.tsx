@@ -44,7 +44,7 @@ return(
             Contact
           </HashLink>
           <div className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300">
-            <a href="/public/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
+            <a href="/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
           </div>
         </div>
       )}
@@ -64,7 +64,7 @@ return(
              <span className="border-r border-zinc-800 dark:border-gray-300"></span>
             </li>
             <li className="px-5">
-              <a href="/public/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
+              <a href="/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
             </li>
           </ul>
         </nav>
