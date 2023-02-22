@@ -18,7 +18,7 @@ export const Project = () => {
   return(
    <section className="border-b border-gray-100 md:py-32 dark:border-zinc-600">
      <div>
-       <h3 className="font-roboto text-lg pb-7 font-bold">Projects</h3>
+       <h3 className="font-roboto text-lg pb-7 font-bold" id="projects">Projects</h3>
        <div className="relative grid gap-6 grid-cols-1 md:grid-cols-2">
           {projects.map((element) => (
            <div className="relative group grid-cols-1 md:col-span-1 cursor-pointer" onClick={openModal}>
@@ -78,13 +78,13 @@ export const Project = () => {
 
                   <div className="mt-6 flex justify-around">
                     <button className="bg-zinc-700 text-white font-nunito rounded-md px-4 py-2">
-                      <BsGithub className="inline-block mx-2 text-white"/>code
+                      <a href={element.githubUrl} target="_blank"><BsGithub className="inline-block mx-2 text-white"/>code</a>
                     </button>
                     <button className="bg-zinc-700 text-white font-nunito rounded-md px-4 py-2">
-                      <MdWeb className="inline-block mx-2 text-white"/> demo
+                      <a href={element.demoUrl} target="_blank"><MdWeb className="inline-block mx-2 text-white"/>demo</a>
                     </button>
                     <button onClick={closeModal} className="bg-zinc-700 text-white font-nunito rounded-md px-4 py-2">
-                      <MdOutlineClose className="inline-block mx-2 text-white"/> close
+                      <MdOutlineClose className="inline-block mx-2 text-white"/>close
                     </button>                  
                   </div>
 

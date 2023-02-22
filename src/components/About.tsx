@@ -3,7 +3,7 @@ export const About = () => {
   return(
     <main className="border-b border-gray-100 py-9 md:py-32 dark:border-zinc-600">
       <div>
-        <h3 className="font-roboto text-lg pb-7 font-bold" >About Me</h3>
+        <h3 className="font-roboto text-lg pb-7 font-bold" id="about">About Me</h3>
         <div className="grid grid-col-1 md:grid-cols-3">
           <div className="grid-cols-1 md:col-span-2 md:mb-0 mb-14">
             <p className="font-roboto text-justify">
