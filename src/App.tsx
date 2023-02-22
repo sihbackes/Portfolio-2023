@@ -8,13 +8,16 @@ import { Contact } from "./components/Contact"
 function App() {
 
   return (
-    <div className="px-10 lg:max-w-6xl mx-auto">
-      <NavBar/>
-      <Home/>
-      <About/>
-      <Project/>
-      <Contact/>
+    <div className="dark:bg-zinc-800 dark:text-gray-300">
+      <div className="px-10 lg:max-w-6xl mx-auto ">
+       <NavBar/>
+       <Home/>
+       <About/>
+       <Project/>
+       <Contact/>
     </div>
+    </div>
+
   )
 }
 

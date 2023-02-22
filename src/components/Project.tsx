@@ -16,20 +16,20 @@ export const Project = () => {
   }
 
   return(
-   <section className="border-b border-gray-100 md:py-32">
+   <section className="border-b border-gray-100 md:py-32 dark:border-zinc-600">
      <div>
        <h3 className="font-roboto text-lg pb-7 font-bold">Projects</h3>
        <div className="relative grid gap-6 grid-cols-1 md:grid-cols-2">
           {projects.map((element) => (
            <div className="relative group grid-cols-1 md:col-span-1 cursor-pointer" onClick={openModal}>
              <div className="relative rounded-xl overflow-hidden">
-               <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-70 transition-opacity"></div>
+               <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-90 transition-opacity"></div>
                <video className="rounded-xl" src={element.video} autoPlay loop muted/>
              </div>
              <div className="absolute bottom-0 left-0 right-0 p-4  transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-10">
                <h3 className="text-white font-nunito text-3xl my-2">{element.projectName}</h3>
                 {element.technologies.map((tec)=> (
-                 <span className="inline-block text-zinc-900s bg-slate-50 font-roboto text-sm  mx-1 px-3 rounded-full">{tec}</span>  
+                 <span className="bg-zinc-700 text-white font-nunito rounded-md px-4 py-1 mx-1">{tec}</span>  
                 ))}
              </div>
                <Transition appear show={isOpen} as={Fragment}>
@@ -57,8 +57,8 @@ export const Project = () => {
                    leaveFrom="opacity-100 scale-100"
                    leaveTo="opacity-0 scale-95"
                   >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <h3 className="text-xl font-roboto font-bold leading-6 text-gray-900">{element.projectName}</h3>
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all dark:bg-zinc-800 dark:text-gray-200">
+                  <h3 className="text-xl font-roboto font-bold leading-6 text-gray-900 dark:text-gray-300">{element.projectName}</h3>
                   <div className="my-3 shadow-lg">
                   <video className="rounded-xl" src={element.video} />
                   </div>
@@ -72,7 +72,7 @@ export const Project = () => {
                   <div className="mt-6">
                     <h4>Technologies</h4>
                     {element.technologies.map((tec)=> (
-                      <span className="inline-block font-roboto text-sm mr-3 ">{tec}</span>  
+                      <span className="inline-block font-roboto text-sm mr-3">{tec}</span>  
                     ))}
                   </div>
 
