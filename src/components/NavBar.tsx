@@ -28,7 +28,10 @@ return(
 <header>
     <div className="flex w-full  py-5 border-b border-gray-100 font-roboto dark:border-zinc-600 z-50">
      <div className="container flex items-center mx-auto z-10 cursor-pointer">
-      <VscColorMode onClick={handleThemeSwitch}/>
+      <div className='w-6 h-6 flex justify-center items-center' onClick={handleThemeSwitch}>
+      <VscColorMode />
+      </div>
+     
       <div className="flex justify-end flex-1 md:hidden text-2xl">
        <FiMenu onClick={toggleMenu}/>
       </div>
