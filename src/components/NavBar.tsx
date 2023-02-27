@@ -47,7 +47,7 @@ return(
             Contact
           </HashLink>
           <div className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300" onClick={() =>{setIsOpen(false)}}>
-            <a href="/docs/SimoneBackes-cv.pdf" target="_blank">Resume</a>
+            <a href="/docs/SimoneBackes-Resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
       )}
