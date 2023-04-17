@@ -15,7 +15,7 @@ export const About = () => {
             </p>
           </div>
           <div className="grid-cols-1 mx-auto md:col-span-1 relative">   
-            <img className="absolute w-48 bottom-3 right-3"  src="/assets/mypic.jpeg" alt="" />
+            <img className="absolute w-48 bottom-3 right-3"  src="/assets/profile.jpg" alt="" />
             <div className="w-48 h-48  border border-zinc-400 "></div>
           </div>
         </div>
