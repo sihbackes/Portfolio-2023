@@ -11,7 +11,7 @@ export const About = () => {
             but have always had a passion for technology. I decided to learn more and discovered the world of Frontend development. After studying on my 
             own for some time, I joined the Epicode bootcamp, which gave me the knowledge and confidence I needed. I consider myself responsible, patient, 
             and easy to learn. I am always looking forward to connecting with people and I love keeping a positive outlook on life and work. Now I am pursuing 
-            an undergraduate degree in System Analysis and Development and am eager to develop my skills even more.
+            a degree in System Analysis and Development and am eager to develop my skills even more.
             </p>
           </div>
           <div className="grid-cols-1 mx-auto md:col-span-1 relative">   
