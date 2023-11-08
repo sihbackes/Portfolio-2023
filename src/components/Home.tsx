@@ -5,6 +5,7 @@ import { Project } from "./Project"
 import { Contact } from "./Contact"
 import { FloatingIcons } from "./FloatingIcons"
 import { Footer } from "./Footer"
+import { Experience } from "./Experience"
 
 
 export const Home = () => {
@@ -16,6 +17,7 @@ export const Home = () => {
        <NavBar/>
        <Banner/>
        <About/>
+       <Experience/>
        <Project/>
        <Contact/>
        <Footer/>
