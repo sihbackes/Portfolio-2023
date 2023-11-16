@@ -40,6 +40,9 @@ return(
           <HashLink smooth to="/#about" className="block px-4 py-2 text-zinc-800 hover:text-white hover:bg-zinc-500  dark:text-gray-300" onClick={() =>{setIsOpen(false)}}>
             About me
           </HashLink >
+          <HashLink smooth to="/#experience" className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300" onClick={() =>{setIsOpen(false)}}>
+           Experience
+          </HashLink >
           <HashLink smooth to="/#projects" className="block px-4 py-2 text-zinc-800  hover:text-white hover:bg-zinc-500 dark:text-gray-300" onClick={() =>{setIsOpen(false)}}>
             Projects
           </HashLink >
@@ -56,12 +59,15 @@ return(
           <ul className="flex justify-end flex-1">
             <li className="px-5">
               <HashLink smooth to="/#about">About me</HashLink>
-              </li>
-            <li className="px-5">
-            <HashLink smooth to="/#projects">Projects</HashLink>
             </li>
             <li className="px-5">
-            <HashLink smooth to="/#contact">Contact</HashLink>
+             <HashLink smooth to="/#experience">Experience</HashLink>
+            </li>
+            <li className="px-5">
+             <HashLink smooth to="/#projects">Projects</HashLink>
+            </li>
+            <li className="px-5">
+             <HashLink smooth to="/#contact">Contact</HashLink>
             </li>
             <li className="px-5">
              <span className="border-r border-zinc-800 dark:border-gray-300"></span>

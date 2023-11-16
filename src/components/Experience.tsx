@@ -4,7 +4,7 @@ export const Experience = () => {
     return (
         <main className="border-b border-gray-100 py-9 md:py-32 dark:border-zinc-600">
           <div>
-            <h3 className="font-roboto text-lg pb-7 font-bold" id="about">Experience</h3>
+            <h3 className="font-roboto text-lg pb-7 font-bold" id="experience">Experience</h3>
             <div className="grid grid-col-1 md:grid-cols-3">
               <div className="grid-cols-1  md:col-span-1 relative">    
                 <div >
