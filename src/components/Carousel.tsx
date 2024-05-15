@@ -3,17 +3,10 @@ import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
 
 
-let slides = [
-    "/assets/holidays1.png",
-    "/assets/holidays2.png",
-    "/assets/holidays3.png",
-    "/assets/holidays4.png",
-    "/assets/holidays5.png",
-    "/assets/holidays6.png",
-    "/assets/holidays7.png",
-    "/assets/holidays8.png",
-]
-export const Carousel = () => {
+interface props{
+    slides: string[]
+}
+export const Carousel = ({slides}:props) => {
 
     let [current, setCurrent] = useState(0);
     let previousSlide = () => {
