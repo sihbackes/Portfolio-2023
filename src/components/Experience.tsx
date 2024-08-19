@@ -16,12 +16,35 @@ let slides2 = [
   "/assets/aquelelugarfeliz4.png",
   "/assets/aquelelugarfeliz5.png",
 ]
+let slides3 = [
+  "/assets/gardenportals1.png",
+  "/assets/gardenportals2.png",
+  "/assets/gardenportals3.png",
+]
 
 export const Experience = () => {
     return (
         <main className="border-b border-gray-100 py-9 md:py-32 dark:border-zinc-600">
           <div>
             <h3 className="font-roboto text-lg my-8 font-bold" id="experience">Experience</h3>
+            <div className="mb-20">
+            <div className="grid grid-col-1 md:grid-cols-3">
+              <div className="grid-cols-1  md:col-span-1 relative">    
+                <div >
+                  <p className="font-bold">Freelance Wordpress Developer </p> 
+                  <p className="text-pink-400 hover:text-zinc-400"><a href="https://gardenportals.com/blog/" target="_blank">Garden Portals</a></p>
+                  <p>Jul 2024 - Present </p>
+                </div>
+                </div>
+                <div className="grid-cols-1 md:col-span-2 md:mb-0 mb-14">
+                  <p className="font-roboto text-justify">
+                  Design and develop a custom WordPress blog with engaging content and user-friendly features.</p>
+                </div> 
+            </div>
+            <div className="w-[100%] m-auto pt-11">
+                <Carousel slides={slides3}/>
+            </div>
+            </div>
             <div className="mb-20">
             <div className="grid grid-col-1 md:grid-cols-3">
               <div className="grid-cols-1  md:col-span-1 relative">    
